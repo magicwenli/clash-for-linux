@@ -1,0 +1,12 @@
+[Unit]
+Description=clash-for-linux
+Documentation=
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/.local/share/clash-for-linux/start.sh
+ExecReload=/home/ubuntu/.local/share/clash-for-linux/shutdown.sh
+Type=simple
+KillMode=none
+Restart=no
+RestartSec=42s
